@@ -1,0 +1,34 @@
+site_name: k8s-certified
+
+repo_name: 'benauca/my-kubernetes-notes'
+repo_url: 'https://github.com/benauca/my-kubernetes-notes'
+theme:
+  name: material
+  features:
+  - navigation.tabs
+  palette:
+    primary: 'indigo'
+    accent: 'red'
+plugins:
+  - search
+extra_css: [extra.css]
+nav:
+  - Home:
+    - Welcome: "index.md"
+  - CKAD:
+    - Introduccion: "pages/01-Introduccion.md"
+    - Getting Started: "pages/02-GettingStarted.md"
+    - Qué es Terraform: "pages/03-what-is-terraform.md"
+  - CKA:
+    - Aspectos Básicos: "pages/TerraformBasics.md"
+    - Terraform State: "pages/Terraform-state.md"
+    - Trabajando con Terraform: "pages/working-with-terraform.md"
+    - Terraform y AWS: "pages/TerraformAndAWS.md"
+    - Remote State: "pages/remote-states.md"
+    - Terraform provisioners: "pages/terraform-provisioners.md"
+    - Import, Tainting Resources And Debugging: "pages/import-tainting-resources-debugging.md"
+    - Functiones Y Condicionales: "pages/functions_and_conditionals.md"
+  - Módulos: "pages/terraform-modules.md"
+  - Workspaces: 
+    - Workspace en Terraform: "pages/workspaces.md"
+    - Usecase: "pages/workspaces/#use-cases"
