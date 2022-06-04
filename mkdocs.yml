@@ -13,12 +13,17 @@ plugins:
   - search
 extra_css: [extra.css]
 nav:
-  - Home:
-    - Welcome: "index.md"
+  - Home: "index.md"
+  - Architecture: "pages/architecture.md"
   - CKAD:
-    - Introduccion: "pages/01-Introduccion.md"
-    - Getting Started: "pages/02-GettingStarted.md"
-    - Qué es Terraform: "pages/03-what-is-terraform.md"
+    - Getting Started: "pages/ckad/introduction.md"
+    - Conceptos Básicos: "pages/ckad/basic-concepts.md"
+    - Configuración: "pages/ckad/configuration.md"
+    - Multi-Container: "pages/ckad/multi-container-pods.md"
+    - Observabilicad: "pages/ckad/observabilty.md"
+    - Pod Design: "pages/ckad/pod-design.md"
+    - Servicios y Networking: "pages/ckad/services-networking.md"
+    - Estado y Persistencia: "pages/ckad/state-persistence.md"
   - CKA:
     - Aspectos Básicos: "pages/TerraformBasics.md"
     - Terraform State: "pages/Terraform-state.md"
@@ -28,7 +33,4 @@ nav:
     - Terraform provisioners: "pages/terraform-provisioners.md"
     - Import, Tainting Resources And Debugging: "pages/import-tainting-resources-debugging.md"
     - Functiones Y Condicionales: "pages/functions_and_conditionals.md"
-  - Módulos: "pages/terraform-modules.md"
-  - Workspaces: 
-    - Workspace en Terraform: "pages/workspaces.md"
-    - Usecase: "pages/workspaces/#use-cases"
+  - Labortorios: "pages/labs/laboratios.md"
