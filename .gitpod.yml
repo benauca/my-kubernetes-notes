@@ -2,9 +2,11 @@ ports:
 - port: 8000
   onOpen: open-preview
 tasks:
-- init: >
-    pip install --upgrade pip &&
-    python -m pip install -r requirements.txt
+- name: Install mkdocs && serve
+  init: |
+    pip install --upgrade pip
+    pip install -r requirements.txt
+  command: mkdocs serve
 github:
     prebuilds:
         # enable for the master/default branch (defaults to true)
